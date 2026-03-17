@@ -19,6 +19,24 @@
       overflow-x: scroll;
       width: 100vw;
       column-gap: 20px;
+
+      /* Chrome, Edge, Safari */
+      &::-webkit-scrollbar {
+        height: 6px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: var(--color-light);
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: var(--color-gray-alt);
+        border-radius: 10px;
+      }
+
+      /* Firefox */
+      scrollbar-width: thin;
+      scrollbar-color: var(--color-gray-alt) var(--color-light);
     }
   }
 

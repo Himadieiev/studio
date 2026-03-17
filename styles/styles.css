@@ -967,6 +967,22 @@ h4,
     width: 100vw;
     -moz-column-gap: 20px;
          column-gap: 20px;
+    /* Chrome, Edge, Safari */
+  }
+  .studies__list::-webkit-scrollbar {
+    height: 6px;
+  }
+  .studies__list::-webkit-scrollbar-track {
+    background: var(--color-light);
+  }
+  .studies__list::-webkit-scrollbar-thumb {
+    background: var(--color-gray-alt);
+    border-radius: 10px;
+  }
+  .studies__list {
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-gray-alt) var(--color-light);
   }
 }
 .studies__item {
@@ -1279,6 +1295,24 @@ h4,
     -moz-column-gap: 30px;
          column-gap: 30px;
   }
+}
+.reviews__slider-list {
+  /* Chrome, Edge, Safari */
+}
+.reviews__slider-list::-webkit-scrollbar {
+  height: 6px;
+}
+.reviews__slider-list::-webkit-scrollbar-track {
+  background: var(--color-dark);
+}
+.reviews__slider-list::-webkit-scrollbar-thumb {
+  background: var(--color-gray-alt);
+  border-radius: 10px;
+}
+.reviews__slider-list {
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-gray-alt) var(--color-dark);
 }
 .reviews__slider-item {
   min-width: var(--reviewsSliderSlideWidth);

@@ -35,6 +35,24 @@
             @include tablet {
                 column-gap: 30px;
             }
+
+            /* Chrome, Edge, Safari */
+            &::-webkit-scrollbar {
+                height: 6px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: var(--color-dark);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: var(--color-gray-alt);
+                border-radius: 10px;
+            }
+
+            /* Firefox */
+            scrollbar-width: thin;
+            scrollbar-color: var(--color-gray-alt) var(--color-dark);
         }
 
         &-item {
